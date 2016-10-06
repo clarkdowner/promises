@@ -22,7 +22,7 @@ var pluckFirstLineFromFile = function (filePath, cb) {
 // This function should retrieve the status code of a GET request to `url`
 var getStatusCode = function (url, cb) {
   
-  request(url, function(error, response, body) {
+  request(url, function(error, response) {
 
     if (response === undefined) {
       cb(error, response);
